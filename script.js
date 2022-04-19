@@ -1,0 +1,51 @@
+function _(selector) {
+    return document.querySelector(selector);
+}
+
+console.log(_('.features-drop'))
+_(".down-f").addEventListener('click',()=>{
+	_(".features-drop").style.display="block";
+	_(".up-f").style.display="block";
+	_(".down-f").style.display="none";
+})
+_(".up-f").addEventListener('click',()=>{
+	_(".features-drop").style.display="none";
+	_(".up-f").style.display="none";
+	_(".down-f").style.display="block";
+})
+_(".down-c").addEventListener('click',()=>{
+	_(".company-drop").style.display="block";
+	_(".up-c").style.display="block";
+	_(".down-c").style.display="none";
+})
+_(".up-c").addEventListener('click',()=>{
+	_(".company-drop").style.display="none";
+	_(".up-c").style.display="none";
+	_(".down-c").style.display="block";
+})
+_(".menu").addEventListener('click',()=>{
+	_(".menu-mobile").style.display="block";
+})
+_(".close").addEventListener('click',()=>{
+	_(".menu-mobile").style.display="none";
+})
+_(".down-f-m").addEventListener('click',()=>{
+	_(".features-drop-mobile").style.display="block";
+	_(".up-f-m").style.display="block";
+	_(".down-f-m").style.display="none";
+})
+_(".up-f-m").addEventListener('click',()=>{
+	_(".features-drop-mobile").style.display="none";
+	_(".up-f-m").style.display="none";
+	_(".down-f-m").style.display="block";
+})
+_(".down-c-m").addEventListener('click',()=>{
+	_(".company-drop-mobile").style.display="block";
+	_(".up-c-m").style.display="block";
+	_(".down-c-m").style.display="none";
+})
+_(".up-c-m").addEventListener('click',()=>{
+	_(".company-drop-mobile").style.display="none";
+	_(".up-c-m").style.display="none";
+	_(".down-c-m").style.display="block";
+})
